@@ -4,6 +4,8 @@ import AdPage2 from "../Component/AdPage/AdPage2";
 import AdPage3 from "../Component/AdPage/AdPage3";
 import Header from "../Component/Sementic/Header";
 import Main from "../Component/Sementic/Main";
+import Aside from "../Component/Sementic/Aside";
+import Footer from "../Component/Sementic/Footer";
 function Home() {
   const [currentPage, setCurrentPage] = useState(0);
   const ads = [<AdPage1 />, <AdPage2 />, <AdPage3 />];
@@ -21,6 +23,9 @@ function Home() {
     <div>
       <Header />
       <Main />
+      <Aside />
+      <Footer />
+
       {/* <h1>광고 만드는 화면</h1>
       {ads[currentPage]} */}
     </div>

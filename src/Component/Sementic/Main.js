@@ -1,5 +1,9 @@
 import "./Main.css";
 function Main() {
-  return <main>Hello</main>;
+  return (
+    <div className="navigation">
+      <main>Main</main>
+    </div>
+  );
 }
 export default Main;
