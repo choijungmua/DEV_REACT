@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import Home from "../../Routes/Home";
-import Blog from "../../Routes/Blog";
-import Skills from "../../Routes/Skills";
-import Project from "../../Routes/Project";
+import Home from "../../../Routes/Home";
+import Blog from "../../../Routes/Blog";
+import Skills from "../../../Routes/Skills";
+import Project from "../../../Routes/Project";
 import "./Header.css";
 function Header() {
   return (
