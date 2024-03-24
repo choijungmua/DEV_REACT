@@ -1,0 +1,22 @@
+.AdContainer {
+  background-color: black;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  height: 300px;
+}
+.adLeftMain {
+  color: white;
+  flex-direction: column;
+  margin-left: 20rem;
+}
+.adDevelop {
+  font-size: 1.5rem;
+}
+span > p {
+  font-size: 0.5em;
+  margin-left: 2rem;
+  line-height: 0.7;
+  color: rgb(175, 175, 175);
+}
