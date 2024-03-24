@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 // import AdPage1 from "../Component/AdPage/AdPage1";
 // import AdPage2 from "../Component/AdPage/AdPage2";
 // import AdPage3 from "../Component/AdPage/AdPage3";
-import Header from "../Component/Layout/Header/Header";
-import Footer from "../Component/Layout/Footer/Footer";
+import Main from "../Component/Sementic/Main";
 // import Main from "../Component/Sementic/Main";
 // import Aside from "../Component/Sementic/Aside";
 // import Footer from "../Component/Layout/Footer/Footer";
@@ -20,7 +19,11 @@ function Home() {
 
   //   return () => clearInterval(intervalId);
   // }, []);
-  return <div>헬로</div>;
+  return (
+    <div>
+      <Main />
+    </div>
+  );
 }
 
 export default Home;

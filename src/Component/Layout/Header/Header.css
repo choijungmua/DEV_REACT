@@ -3,62 +3,49 @@ body {
   margin: 0;
 }
 
-header {
-  background-color: white;
-  top: 0;
-  z-index: 1000;
-  position: fixed;
-  width: 100%;
-  padding: 15px;
-  border: 0;
-}
-
-.hide {
-  display: none;
-}
-.mainLogo {
-  float: left;
-  font-weight: bold;
-  font-size: 18px;
-  margin-left: 5rem;
-  margin-top: 0;
-  padding: 15px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-ul {
-  margin-right: 5rem;
-}
-
-li {
+/* 콘테이너 */
+.container {
+  background-color: black;
   display: flex;
+  justify-content: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.smContainer {
+  background-color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  padding: 5px;
+  color: rgb(201, 201, 201);
+  justify-content: center;
+  cursor: pointer;
+}
+ul {
+  padding: 0;
+}
+li {
   list-style: none;
   float: right;
-  margin-left: 2rem;
   padding: 10px;
   font-weight: bold;
-  font-size: 18px;
-  transition: all 0.3s ease;
-  position: relative;
+  font-size: 1rem;
+  margin: 0 10px;
+  padding: 0;
 }
 
-.mainLogo:hover {
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  transform: scale(1.2);
-  border-radius: 15%;
-  background: gray;
-  z-index: 1;
+.Link {
+  color: rgb(201, 201, 201);
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+}
+
+.Link:hover {
   color: white;
 }
 
-li:hover {
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  transform: scale(1.2);
-  border-radius: 15%;
-  background: gray;
-  z-index: 1;
+.smContainer:hover {
   color: white;
 }
