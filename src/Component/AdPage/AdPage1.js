@@ -48,8 +48,9 @@ function AdPage1() {
 
   return (
     <div className="AdContainer">
-      <div className="adLeftMain">
+      <div className="adMain">
         <p className="adDevelop">FrontEnd Developer</p>
+        <div className="adLine"></div>
         <span>
           <p>{word1}</p>
           <p>{word2}</p>

@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./Header.css";
+import { atom, selector } from "recoil";
 
 function Header() {
   const [mouseOver, setMouseOver] = useState(false);
   const [showText, setShowText] = useState(false);
+  const [showHome, setShowHome] = useState("Home");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -13,15 +15,18 @@ function Header() {
     return () => clearTimeout(timer); // 컴포넌트가 언마운트되면 타이머 클리어
   }, []);
 
+  const HomeOver = () => {
+    setShowHome((Over) => !Over);
+  };
+  const HomeLeave = () => {
+    setShowHome((Over) => !Over);
+  };
   return (
     <header>
       {showText && (
         <div
           className="smContainer"
           onMouseOver={() => {
-            setMouseOver((Over) => !Over);
-          }}
-          onMouseLeave={() => {
             setMouseOver((Over) => !Over);
           }}
         >
@@ -50,8 +55,13 @@ function Header() {
               </Link>
             </li>
             <li>
-              <Link to="/" className="Link">
-                Home
+              <Link
+                to="/"
+                className="Link"
+                onMouseEnter={HomeOver}
+                onMouseLeave={HomeLeave}
+              >
+                {showHome ? "Home" : undefined}
               </Link>
             </li>
           </ul>

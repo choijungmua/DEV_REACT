@@ -1,10 +1,10 @@
 body {
   padding: 0;
+  cursor: none;
   margin: 0;
 }
 header {
   position: fixed;
-  z-index: 999;
   width: 100%;
   transition: background-color 0.3s;
 }
@@ -25,7 +25,7 @@ header {
   padding: 5px;
   color: rgb(201, 201, 201);
   justify-content: center;
-  cursor: pointer;
+  cursor: none;
 }
 ul {
   padding: 0;
@@ -43,8 +43,9 @@ li {
 .Link {
   color: rgb(201, 201, 201);
   text-decoration: none;
-
   transition: color 0.3s ease;
+  cursor: none;
+  padding: 10px;
 }
 
 .Link:hover {

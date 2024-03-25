@@ -1,12 +1,11 @@
 .cursor {
-  width: 20px;
-  height: 20px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background: linear-gradient(45deg, #a18cd1, #fbc2eb);
   position: absolute;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: ease;
+  transition: ease-in;
   opacity: 30%;
-  z-index: 0;
 }
