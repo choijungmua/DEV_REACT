@@ -18,12 +18,14 @@ const Layout = ({ children }) => {
   }, []);
   return (
     <div>
-      <div
-        className="cursor"
-        style={{ left: cursorPosition.x, top: cursorPosition.y }}
-      ></div>
       <Header />
-      <main>{children}</main>
+      <main>
+        {children}
+        <div
+          className="cursor"
+          style={{ left: cursorPosition.x, top: cursorPosition.y }}
+        ></div>
+      </main>
       <Footer />
     </div>
   );

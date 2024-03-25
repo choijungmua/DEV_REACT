@@ -12,13 +12,14 @@ function Main() {
       setCurrentPage((prevPage) =>
         prevPage === ads.length - 1 ? 0 : prevPage + 1
       );
-    }, 5000);
+    }, 1000);
 
     return () => clearInterval(intervalId);
   }, []);
   return (
     <>
       <AdPage1 />
+      <div>O</div>
     </>
   );
   // <div>{ads[currentPage]}</div>;

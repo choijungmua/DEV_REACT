@@ -1,25 +1,33 @@
 import { Link } from "react-router-dom";
-import Home from "../../../Routes/Home";
-import Skills from "../../../Routes/Skills";
-import Project from "../../../Routes/Project";
+import { useState, useEffect } from "react";
 import "./Header.css";
-import { useState } from "react";
+
 function Header() {
   const [mouseOver, setMouseOver] = useState(false);
+  const [showText, setShowText] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowText(true);
+    }, 2300);
+    return () => clearTimeout(timer); // 컴포넌트가 언마운트되면 타이머 클리어
+  }, []);
 
   return (
-    <header onMouse>
-      <div
-        className="smContainer"
-        onMouseOver={() => {
-          setMouseOver((Over) => !Over);
-        }}
-        onMouseLeave={() => {
-          setMouseOver((Over) => !Over);
-        }}
-      >
-        FrontEnd Developer
-      </div>
+    <header>
+      {showText && (
+        <div
+          className="smContainer"
+          onMouseOver={() => {
+            setMouseOver((Over) => !Over);
+          }}
+          onMouseLeave={() => {
+            setMouseOver((Over) => !Over);
+          }}
+        >
+          FrontEnd Developer
+        </div>
+      )}
       {mouseOver && (
         <div
           className="container"
@@ -52,4 +60,5 @@ function Header() {
     </header>
   );
 }
+
 export default Header;

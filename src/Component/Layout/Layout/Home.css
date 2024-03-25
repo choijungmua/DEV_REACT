@@ -1,9 +1,12 @@
 .cursor {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: #ffffff;
   position: absolute;
   transform: translate(-50%, -50%);
-  z-index: 999;
+  pointer-events: none;
+  transition: ease;
+  opacity: 30%;
+  z-index: 0;
 }
