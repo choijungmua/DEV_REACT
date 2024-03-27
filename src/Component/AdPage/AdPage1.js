@@ -1,4 +1,4 @@
-import "./AdPage.css";
+import "./AdPage.scss";
 import { useEffect, useState, useRef } from "react";
 
 function AdPage1() {

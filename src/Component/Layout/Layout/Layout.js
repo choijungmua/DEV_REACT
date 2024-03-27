@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useEffect, useState } from "react";
-import "./Home.css";
+import "./Home.scss";
 const Layout = ({ children }) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [mouseOver, setMouseOver] = useState(false);

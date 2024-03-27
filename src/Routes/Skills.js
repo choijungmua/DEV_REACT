@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import Main from "../Component/Sementic/Main";
 function Skills() {
-  return <p>스킬</p>;
+  return <Main />;
 }
 
 export default Skills;

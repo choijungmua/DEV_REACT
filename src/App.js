@@ -5,7 +5,7 @@ import Project from "./Routes/Project";
 import Layout from "./Component/Layout/Layout/Layout";
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

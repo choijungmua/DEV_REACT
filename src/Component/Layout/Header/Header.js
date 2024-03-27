@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import "./Header.css";
+import "./Header.scss";
 import { atom, selector } from "recoil";
 
 function Header() {
